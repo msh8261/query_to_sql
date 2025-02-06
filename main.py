@@ -9,6 +9,7 @@ import litellm
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import text
+from sqlalchemy.ext.declarative import declarative_base
 from dotenv import load_dotenv
 from log import logger
 from agents import SQLAgent, error_reasoning_agent, error_fix_agent
